@@ -1,0 +1,94 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+.footer-top {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background: linear-gradient(45deg, #5a72a0, #343a40, #5a72a0);    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+}
+
+.connect, .newsletter {
+    flex: 1;
+    margin: 0 10px;
+}
+
+.connect h2, .newsletter h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.connect p {
+    font-size: 16px;
+}
+
+.newsletter form {
+    display: flex;
+    justify-content: center;
+}
+
+.newsletter input {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+.newsletter button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #000;
+    color: #fff;
+    cursor: pointer;
+}
+
+.footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #222;
+}
+
+.footer-bottom .logo {
+    text-align: left;
+}
+
+.footer-bottom .logo h1 {
+    font-size: 36px;
+    margin: 0;
+}
+
+.footer-bottom .logo p {
+    font-size: 18px;
+    margin: 0;
+}
+
+.footer-bottom .links {
+    display: flex;
+    align-items: center;
+}
+
+.footer-bottom .links a {
+    color: #fff;
+    margin: 0 10px;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.footer-info {
+    background-color: #111;
+    padding: 10px;
+    font-size: 14px;
+}
