@@ -15,7 +15,8 @@ footer {
     display: flex;
     justify-content: space-between;
     padding: 20px;
-    background: linear-gradient(45deg, #5a72a0, #343a40, #5a72a0);    border-top-left-radius: 25px;
+    background: linear-gradient(45deg, #ff6b6b, #f06595, #c084fc);
+    border-top-left-radius: 25px;
     border-top-right-radius: 25px;
 }
 
@@ -43,6 +44,7 @@ footer {
     border: none;
     border-radius: 5px;
     margin-right: 10px;
+    flex: 1;
 }
 
 .newsletter button {
@@ -59,10 +61,13 @@ footer {
     justify-content: space-between;
     padding: 20px;
     background-color: #222;
+    flex-wrap: wrap;
 }
 
 .footer-bottom .logo {
     text-align: left;
+    flex: 1;
+    min-width: 200px;
 }
 
 .footer-bottom .logo h1 {
@@ -78,6 +83,10 @@ footer {
 .footer-bottom .links {
     display: flex;
     align-items: center;
+    flex: 2;
+    min-width: 200px;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
 .footer-bottom .links a {
@@ -91,4 +100,58 @@ footer {
     background-color: #111;
     padding: 10px;
     font-size: 14px;
+}
+
+/* Media Queries برای ریسپانسیو بودن */
+@media (max-width: 768px) {
+    .footer-top {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .connect, .newsletter {
+        margin: 10px 0;
+    }
+
+    .newsletter form {
+        flex-direction: column;
+    }
+
+    .newsletter input {
+        margin: 10px 0;
+        width: 100%;
+    }
+
+    .footer-bottom {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-bottom .logo, .footer-bottom .links {
+        text-align: center;
+    }
+
+    .footer-bottom .links {
+        flex-direction: column;
+        margin-top: 10px;
+    }
+
+    .footer-bottom .links a {
+        margin: 5px 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .footer-top h2, .footer-bottom h1 {
+        font-size: 20px;
+    }
+
+    .footer-top p, .footer-bottom p, .footer-bottom .links a {
+        font-size: 14px;
+    }
+
+    .newsletter button {
+        width: 100%;
+        margin-top: 10px;
+    }
 }
