@@ -110,7 +110,6 @@
   color: white;
   border-radius: 20px;
   border: none;
-  margin-left: -11px;
 }
 .div-img-header button:hover {
   background-color: #3a4a68;
@@ -235,7 +234,7 @@ a {
   border: none;
   color: wheat;
   font-weight: 600;
-  font-size: 20px;
+  font-size: 18px;
 }
 .button-test:hover {
   background-color: #3a4a68;
@@ -358,7 +357,13 @@ a:hover{
     position: relative;
     margin: 20px;
   }
-  @media only screen and (max-width: 840px) {
+  .h1-html-run-code svg,.h1-html-run-code svg{
+  width: 40px;
+  height: 40px;
+  color: white;
+  margin-right: 6px;
+  }
+  @media only screen and (max-width: 915px) {
     .form-inline {
       display: none;
     }
@@ -444,13 +449,51 @@ a:hover{
       width: 285px;
       height: 418px;
     }
-    /* .h1-html-run-code{
-      display: none;
-    } */
     .h1-html-run-code-madi{
       display: block;
     }
+    .div-img-header img{
+      height: 329px;}
+
+.div-img-header button{
+        width: 116px;
+        height: 36px;
+        font-size: 16px;}
+
+  
+  .div-img-header h1 {
+    font-size: 20px;
+    font-weight: 700;
+    left: 20px;
+    position: absolute;
+    top: -39px;
   }
   .h1-html-run-code-madi{
     display: none;
   }
+  .h1-ler-CSS{
+    left: 88%;
+  }
+  .h1-html-run-code svg,.h1-html-run-code svg{
+    display: none;
+  }
+  }
+
+  @media only screen and (max-width: 450px) {
+    .div-img-header button{
+      width: 86px;
+      height: 36px;
+      font-size: 14px;
+  }
+  .div-img-header h1 {
+    left: 2px;
+  }
+  .h1-ler-js{
+    left: 48%;
+  }
+  
+}
+/* .stec{
+/* position: static; */
+/* } */ 
+
