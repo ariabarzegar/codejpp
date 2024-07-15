@@ -491,9 +491,47 @@ a:hover{
   .h1-ler-js{
     left: 48%;
   }
+  #form-test-t{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+  background-color: #343a40;
+  width: 266px;
+  height: 300px;
+  border-radius: 40px;}
+  #form-test-t{
+    width: 213px;
+    height: 245px;
+    position: absolute;
+    top: 94px;
+    right: 6px;
+
+
+  }
+#form-test-t button {
+  background-color: #5a72a0;
+  font-size: 20px;
+  border: none;
+  border-radius: 20px;}
+
+  #form-test-t input {
+    border-radius: 20px;
+    border: none;}
   
+    #form-test-t button,
+input,
+label {
+  margin: 10px;
+}
 }
 /* .stec{
 /* position: static; */
 /* } */ 
+@media screen and (min-width: 800px) {
+  .none{
+      display: none;
+  }
 
+
+}

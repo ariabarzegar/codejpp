@@ -5,7 +5,7 @@ slectbutoncss.addEventListener("click",()=>{
   if (slectbutoncss.innerHTML=="حذف کد") {
     slectbutoncss.innerHTML="اجرای کد"
   }else if (slectbutoncss.innerHTML=="اجرای کد") {
-    slectbutonhtml.innerHTML="حذف کد"
+    slectbutoncss.innerHTML="حذف کد"
   }
 })
 
@@ -13,24 +13,26 @@ let slectbutonjs=document.querySelector(".button-test-js")
 let selectformTest=document.getElementById("form-test")
 slectbutonjs.addEventListener("click",()=>{
 
-  setInterval(function(){
-    let r=Math.floor(Math.random()*255)
-    let g=Math.floor(Math.random()*255)
-    let b=Math.floor(Math.random()*255)
-    let res=document.getElementById("form-test")
-    res.style.background = `rgb(${r},${g},${b})`
-    },500)
-
+    slectbutoncss.innerHTML="اجرای کد"
+   var a= setInterval(function(){
+      let r=Math.floor(Math.random()*255)
+      let g=Math.floor(Math.random()*255)
+      let b=Math.floor(Math.random()*255)
+      let res=document.getElementById("form-test")
+      res.style.background = `rgb(${r},${g},${b})`
+      },500)
 })
 
 let slectbutonhtml=document.querySelector(".button-test")
 let selectformhtml=document.querySelector(".none")
 slectbutonhtml.addEventListener("click",()=>{
-  selectformhtml.classList.toggle("non")
-  selectformhtml.classList.remove("none")
   if (slectbutonhtml.innerHTML=="حذف کد") {
+    selectformhtml.classList.add("none")
+    selectformhtml.classList.remove("non")
     slectbutonhtml.innerHTML="اجرای کد"
   }else if (slectbutonhtml.innerHTML=="اجرای کد") {
+    selectformhtml.classList.add("non")
+    selectformhtml.classList.remove("none")
     slectbutonhtml.innerHTML="حذف کد"
   }
 })
