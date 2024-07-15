@@ -294,7 +294,7 @@ a {
   border: greenyellow 1px solid;
 }
 
-#form-test,#form-test-t{
+#form-test,.form-test-t{
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -304,18 +304,18 @@ a {
   height: 300px;
   border-radius: 40px;
 }
-#form-test button,#form-test-t button {
+#form-test button,.form-test-t button {
   background-color: #5a72a0;
   font-size: 20px;
   border: none;
   border-radius: 20px;
 }
-#form-test input,#form-test-t input {
+#form-test input,.form-test-t input {
   border-radius: 20px;
   border: none;
 }
 #form-test button,input,
-label ,#form-test-t button,
+label ,.form-test-t button,
 input,
 label {
   margin: 10px;
@@ -438,7 +438,7 @@ a:hover{
     height: 24px;
     font-size: 12px;
     }
-    #form-test-t,#form-test{
+    .form-test-t,#form-test{
       width: 213px;
       height: 245px;
       position: absolute;
