@@ -5,6 +5,11 @@
   margin: 0 0 0 20px;
   float: left;
 }
+.bg-dark{
+  z-index: 55;
+  position: sticky;
+  top: 0;
+}
 .right {
   float: left;
 }
