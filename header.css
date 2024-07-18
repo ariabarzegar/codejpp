@@ -162,6 +162,7 @@
   height: 450px;
   margin: 10px;
   border-radius: 20px;
+  overflow: auto;
 }
 .color-code {
   color: rgb(19, 212, 255);
@@ -279,6 +280,7 @@ a {
   border-radius: 20px;
   position: relative;
   margin: 20px;
+  overflow:auto;
 }
 .button-test-css {
   position: absolute;
@@ -353,6 +355,7 @@ a:hover{
     border-radius: 20px;
     position: relative;
     margin: 20px;
+    overflow: auto;
 }
 .run-js {
     width: 451px;
